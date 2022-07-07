@@ -1,0 +1,12 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te audará a descubrir rápidamente cualquier agujero en tu compresión.
+
+	for: "for" es una palabra reservada que se usa para que la computadora haga algo muchas veces, pero tu debes decirle cuantas veces debe repetirlo.
+
+	&&: Es una puerta mágica que se abre cuando cumples con todas sus condiciones. Siempre pone 2 o más.
+
+	||: Es la hermana de la puerta mágica &&, que no es tan exigente como la anterior. Ella se abre cuando cumples por lo menos 1 de las condiciones que te ponga.
+
+	!: es un símbolo cambia el sentido de lo que dices despues de él.
+
+
+2. Desde la carpeta "Prep" en la carpeta donde clonaste el repo, inresa el comando npm test "JSII.test.js" para correr los test automatizados. Al principio, todos los test estarán fallados/rotos. Encontrarás las funciones para hacer pasar los test en el archivo "homework.js".
