@@ -1,0 +1,17 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+	Objetos: son cosas que sirven para hacer algo y tienen características como: color, tamaño, forma, etc.
+	
+	Propiedades: son las características del objeto, como: su forma, color, etc.
+	
+	Métodos: son las acciones que puede hacer el objeto, como: mostrar algo, sumar, cambiar de posición, etc.
+	
+	Bucle for…in: es una máquina que te dice todas las cosas que puede hacer un objeto, o las características del bojeto.
+	
+	Notación de puntos vs notación de corchetes: la notación de puntos y la de corechetes son las maneras en que le puedes preguntar a un objeto sus características o cosas que puede hacer.
+		
+		Con la notación de puntos, dices el nombre del objeto, luego colocas un punto (.) y luego colocas la característica que quieres saber o las cosas que puede hacer.
+
+		Con la notación de corchete, dice el nombre del objeto, y colocas entre corchetes ([]) la característica que quieres saber o las cosas que puede hacer.  
+
+2. Desde la carpeta Prep en la carpeta donde clonaste el repo, ingresa el comando npm test JSIV.test.js para correr los tests automatizados. Al principio, todos los tests estarán fallados/rotos. Encontrarás las funciones para hacer pasar los tests en el archivo homework.js.

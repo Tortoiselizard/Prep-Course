@@ -1,22 +1,12 @@
 1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
 
-Variable
+	Variable: Es una cajita donde puedes guardar cosas
 
-	Es una cajita donde puedes guardar cosas
+	String: Es una etiqueta que puede decir tu nombre, una palabra, número, etc.
 
-String
+	Funciones (argumentos, return): Es una máquina a la que le das algo (argumento) y te devuelve otra cosa. En algunos casos te puede devolver lo mismo.
 
-	Es una etiqueta que puede decir tu nombre, una palabra, número, etc.
+	Declaraciones if: Es una puerta que solo se abre cuando le dices la verdad. Luego de estar abierta puedes entrar y ver lo que hay.
 
-Funciones (argumentos, return)
-
-	Es una máquina a la que le das comida (argumento) para funcionar y hace algo. En algunos casos te devuelve otra cosa (return).
-
-Declaraciones if
-
-	Es una puerta mágica que solo se abre cuando le dices la verdad.
-
-Valores booleanos (true, false)
-
-	Son dos angelitos, uno bueno y uno malo. El bueno siempre dice la verdad y el malo siempre dice la mentira. Los puedes guardar en la cajita llamada variable.
+	Valores booleanos (true, false): es otra manera de decir "verdadero" o "falso" respectivamente.
 
