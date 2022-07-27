@@ -1,0 +1,50 @@
+body {
+    color:white;
+    background-image: url("./fondo3.1600x900.jpg");
+    background-size: cover;
+    background-size: 100rem;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+
+div {
+
+    margin: 2px;
+    border: 1px;
+    padding: 2px;
+    content: 1px;
+}
+
+#hoja {
+    margin: 0 auto;
+    width: 800px;
+    border: 5px solid white;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#descripción-personal {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    height: 1px;
+}
+
+h3 {
+    height: 1px;
+}
+
+p {
+    font-size:18px
+}
+
+.trabajo {
+    display: flex;
+    
+}

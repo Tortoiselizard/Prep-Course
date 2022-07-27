@@ -1,0 +1,126 @@
+Para hacer los extra credits, generalmente será necesario que investigue algunas cosas por su cuenta en Internet.
+
+------------------------------------------------------------------------------------------------------------------
+# Establecer una imagen como fondo de toda la página
+
+
+Para colocar una imagen de fondo de la página, la propiedad básica es "background-imagen". Su sintaxis es:
+	
+	background-image: url("direcciónURL")
+
+Cuando usas solo esta propiedad se repetirá la imagen hasta abarcar toda la pantalla. Para modificar esta y otras propiedades de la imagen tienes:
+
+
+* background-repeat: por defecto la imagen de fondo se repite hasta cubrir la superficie del elemento que lo contiene. Para controlar estas repeticiones se usa esta propiedad. Los valores que esta propiedad admite son:
+
+	repeat: es el valor por defecto
+	
+	repeat-y: se repite solo en verticalmente
+
+	repeat-x: se repite solo horizontalmente
+
+	no-repeat: no se repite
+
+* background-position: esta propiedad permite ubicar la imagen en una posición específica. Esta propiedad se subdivide en:
+
+	background-position-x: center
+
+	background-position-y: center
+
+El valor "center" hace que la imagen se centre en el médio de la página, mientras que las propiedades "-x" y "-y" indican el eje en que se centrará la imágen.
+
+
+*background-size: esto permite definir el tamaño de la imagen de fondo. Luego de esta propiedad colocas el valor, que puede estar representado en medidas relativas o absolutas.
+
+	<número>rem: se usa para medida en %
+
+	<número>px: se usa para medida absoluta
+
+
+* background-attachment: con esta propiedad puedes controlar el comportamiento de la imagen durante el scroll de la página. Esto significa que puedes escoger si el fondo se queda estático o acompaña al scroll.
+
+	fixed: es el valor que le das si quieres que la imagen se quede estática.
+
+	scroll: es la opción por defecto, que indica que quieres que se mueva la imagen con el scroll
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+# Centrar los div en la página
+
+hay varias maneras de centrar los elementos en css. Algunas de estas maneras son:
+
+* Centrar horizontalmente:
+	
+	texto: para centrar texto horizontalmente puedes usar la propiedad "text-aling" con el valor asignado "center".
+
+	div: para centrar horizontalmente elementos de nivel bloque, como div, puedes usar la propiedad "margin" con el valor "0 auto". Otra manera es usando flexbox, para lo que debes colocar "display: flex" y "justify-content: center" como propiedades del contenedor padre
+
+* Centrado vertical:
+
+	div: hay varias maneras de centrar verticualmente:
+
+		@ posición absoluta: para este método necesitas conocer el alto de los elementos que vas a centrar. 1ro asigna la propiedad "position:relative" al elemento contenedor. Luego al elemento hijo asigna "position:absolute" y "top:50%". Esto hará que la parte superior del elemento se centre en el médio de la página. Para centrar la imagen completa debes añadir la propiedad "margin-top: -'numero'px", donde 'numero' representa la mital del valor de la altura del elemento hijo.
+
+		@ transformy y translate: en caso de no conocer la altura asigna la propiedad "position: relative" al elemento padre, mientras que al hijo colocale las porpiedades "position: absolute", "top: 50%" y "transform: translate(0, -50%)". Se podría decir que 'translate(0, -50%)' es un atajo para "translateX(0)" y translateY(-50%). Otra forma de escribirlo para centrar verticalmente es "transform: translateY(-50%)".
+
+		@flexbox: con este método escribe "display: flex" y "align-items: center" al elemento padre. 
+
+	En caso de que quieras centrar un div de forma vertical y horizontalmento en simultaneo:
+
+	@ Con posiciones CSS absolutas y margenes negativos: Para este caso se debe conocer el ancho y largo del contenedor. Al elemento padre asignale la propiedad "position: relative", al hijo asignale "position: absolute", "top: 50%" y "left: 50%". Esto útimo colocará la esquina del contenedor hijo en el centro del contenedro padre. Para que el centor del contenedor padre coincida con el del contenedor hijo coloca "margin: -'numero1'px 0 0 -'numero2'px. Donde 'numero1' indica la altura del contenedor hijo, y 'numero2' indica el ancho del contenedor hijo.
+
+	@ con transform y translate: usa este método si no conoces las dimesiones exactas y no puedes usar flexbox. 1ro debes asignarle al padre "position: relative", para luego asignarle al hijo "position: absolute", "top: 50%" y "left: 50%". Al final usa "transform: translate(-50%, -50%)".
+
+	@ con flexbox: para usar este método debes asignarle al elemento padre "display: flex", "justify-content: center" y "align-items: center".
+	
+
+# Centrar todos los elementos en la página
+
+# Lea sobre el posicionamiento y use la regla de posición en sus estilos
+
+Existen varias maneras de posicionar los elementos en un documento html.
+
+	* position: esta propiedad puede tener los siguientes valores:
+
+		@static: utiliza el orden natural de los elementos html.
+
+		@relative: los elementos se mueven ligeramente en base a su posición estática
+
+		@absolute: los elementos se colocan en base al contenedor padre (suele ser la página completa)
+
+
+		@fixed: posicionamiento fijo. Identico al absoluto, pero aunque agamos scroll no se mueve.
+
+		@sticky: posicionamiento pegado. similar al relativo, usado para pegar menus en la parte superior.
+
+	Si usamos un modo de posicionamiento diferente al estático podemos usar una serie de propiedades para modificar la posición de un elemento. Estas propiedades son:
+
+		@top: empuja un elemento desde la parte superior hacia la inferior
+
+		@bottom: empuja un elemento desde la parte inferior hacia la superiro
+
+		@left: empuja un elemento desde la parte izquierda hacia la derecha
+
+		@right: empuja un elemento desde la parte derecha hacia la izquierda
+
+		@z-index: coloca un elemento en el eje de profundidad, más cerca o mas lejos del usuario.
+
+
+
+# Lea sobre flexbox y use flexbox para centrar todos los elementos en la página
+
+Los elementos básicos para usar flexbox son:
+
+	*contenedor: es el elemento padre que tendrá en su interior cada uno de los items flexibles. En flex establecemos las propiedades al elemento padre. El contenedor cuenta con:
+
+		@eje principal: es una recta horizontal que atravieza el contenedor
+
+		@eje secundario: es una recta perpendicular a al eje principal (vertical)
+
+	*items: son cada uno de los hijos que tendrá el contenedor padre en su interior.
+
+Para activar el modo flexbox usamos sobre el elemento contenedor la propiedad "display:flex" o "display:inline-flex", dependiendo de como queramos que se comporte el contenedor.
+
+	*flex: establece un contenedor en bloque, similar a block (ocupa todo el ancho del padre)
+
+	*inline-flex: establece un contenedor en línea, similar a inline-block (ocupa solo el contenedor).
